@@ -24,6 +24,12 @@
         });
         $A.enqueueAction(action);
     },
+
+    verificaEndereco : function(component, event, helper){
+        var cep  = '05158120';
+        component.set("v.varCep", cep);
+
+    }
 })    
     //var cep = component.get("v.varCep"); <-- Não funciona deste jeito
     //component.set("v.varCep", "05108-150"
