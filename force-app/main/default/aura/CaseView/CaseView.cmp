@@ -2,12 +2,14 @@
     <!-- Variáveis -->
     <aura:attribute name="varCpf" type="String" />
     <aura:attribute name="varTelefone" type="String" />
+    <aura:attribute name="recordId" type="String" />
 
 
     <!-- Componentes -->
-    
+    <div class="c-container">
         <lightning:input aura:id="cpf" label="CPF:" onkeyup="{!c.PegaCpf}" value="{!v.varCpf}" name="cpf"
             placeholder="Digite o CPF" required="" />
+            <lightning:input label="Name:" disabled="true"></lightning:input>
         <lightning:input aura:id="telCelular" value="{!v.varTelefone}" maxlength="15" onkeyup="{!c.PegaTelefone}"
             type="cel" label="Celular" name="telCelular" placeholder="" />
         <lightning:select aura:id="tipoDeCaso" label="Qual tipo de caso?" name="tipoDeCaso" required="">
@@ -18,5 +20,6 @@
         </lightning:select>
         <lightning:textarea aura:id="descricao" label="Descreva:" name="descricao"
             placeholder="Minha dúvida, reclamação ou troca..." />
-        <lightning:button aura:id="btnEnviar" type="submit" label="Enviar" onclick="{!c.PegaCpf}" />
+    </div>
+    <lightning:button aura:id="btnEnviar" type="submit" label="Enviar" onclick="{!c.ValidandoOCpf}" />
 </aura:component>
