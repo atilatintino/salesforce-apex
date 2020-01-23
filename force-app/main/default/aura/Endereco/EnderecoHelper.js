@@ -1,7 +1,7 @@
 ({
     //helperMethod : function() {
     //}
-    BuscaCepHelper: function (component, event, helper) {
+    BuscaCepHelper: function (component) {
         var cepnew = component.find("campoCep").get("v.value");
         var recordIdNew = component.get("v.recordId");
         console.log("Chamou Helper " + cepnew + recordIdNew);
