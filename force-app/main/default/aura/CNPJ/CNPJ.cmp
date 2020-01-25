@@ -1,0 +1,28 @@
+<aura:component controller="ControllerCNPJ" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:appHostable">
+<!-- Variáveis -->
+<aura:attribute name="varRecordId" type="String" />
+<aura:attribute name="varCNPJ" type="String" />
+<aura:attribute name="varNome" type="String" />
+<aura:attribute name="varUF" type="String" />
+<aura:attribute name="varTelefone" type="String" />
+<aura:attribute name="varSituacao" type="String" />
+<aura:attribute name="varBairro" type="String" />
+<aura:attribute name="varLogradouro" type="String" />
+<aura:attribute name="varNumero" type="String" />
+<aura:attribute name="varCep" type="String" />
+<aura:attribute name="varMunicipio" type="String" />
+<aura:attribute name="varTipo" type="String" />     
+
+<!-- Componentes -->
+<lightning:input name="input1" label="CNPJ" aura:id="campoCNPJ" value="{!v.varCNPJ}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Nome" aura:id="campoNome" value="{!v.varNome}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="UF" aura:id="campoUF" value="{!v.varUF}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Situação" aura:id="campoSituacao" value="{!v.varSituacao}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Bairro" aura:id="campoBairro" value="{!v.varBairro}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Logradouro" aura:id="campoLogradouro" value="{!v.varLogradouro}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Número" aura:id="campoNumero" value="{!v.varNumero}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Cep" aura:id="campoCep" value="{!v.varCep}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Município" aura:id="campoMunicipio" value="{!v.varMunicipio}" class="col-6"></lightning:input>
+<lightning:input name="input1" label="Tipo" aura:id="campoTipo" value="{!v.varTipo}" class="col-6"></lightning:input>
+<lightning:button label="Buscar" onclick="{!c.ControllerBuscaCNPJ}"></lightning:button>
+</aura:component>	
